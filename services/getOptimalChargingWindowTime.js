@@ -1,5 +1,5 @@
 const getUTCThreeNextDaysDateUTS = require('../utils/DisplayEnergyMix/getUTCThreeNextDaysDate.js');
-const findOptimalChargingWindowTime = require('../utils/findOptimalChargingWindowTime.js');
+const findOptimalChargingWindowTime = require('../utils/findOptimalChargingWindowTime/findOptimalChargingWindowTime.js');
 
 const getOptimalChargingWindowTime = async (req, res) => {
 	if (!(1 <= req.query.hours) && !(req.query.hours <= 6)) {

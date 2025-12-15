@@ -7,5 +7,5 @@ module.exports = function calculateCleanEnergyPercentForOneDay(energyData) {
 			cleanEnergyPercent += energyData[key];
 		}
 	}
-	return Number(cleanEnergyPercent).toFixed(1);
+	return Number(cleanEnergyPercent.toFixed(1));
 };

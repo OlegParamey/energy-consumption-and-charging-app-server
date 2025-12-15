@@ -1,4 +1,4 @@
-const CLEAN_ENERGY_TYPES = require('../constants.js');
+const CLEAN_ENERGY_TYPES = require('../../constants.js');
 
 module.exports = function findOptimalChargingWindowTime(forecastData, windowHours) {
 	const intervalsCleanEnergy = calculateCleanEnergyForInterval(forecastData);
@@ -34,7 +34,7 @@ module.exports = function findOptimalChargingWindowTime(forecastData, windowHour
 			date: formatDate(bestWindow.end),
 			time: formatTime(bestWindow.end),
 		},
-		averageCleanEnergyPercent: Number(bestWindow.average).toFixed(2),
+		averageCleanEnergyPercent: Number(bestWindow.average.toFixed(2)),
 	};
 };
 
